@@ -1,14 +1,14 @@
 ﻿###########################################################
 # AUTHOR  : Chase Dudas
 # CREATED : 7/5/2018
-# Title   : Out to Lunch 
+# Title   : Twilio Messanger - Desktop 
 # COMMENT : Sends SMS messages via Twilio  
 ###########################################################
 # ENVIRONMENTAL
 ###########################################################
 
-[Environment]::SetEnvironmentVariable("TWILIO_ACCOUNT_SID", "ACb92d9e645f10846539fb7d466b9c08fe", "User")
-[Environment]::SetEnvironmentVariable("TWILIO_AUTH_TOKEN", "292ee2e6c53f42a39989f660641d2541", "User")
+[Environment]::SetEnvironmentVariable("TWILIO_ACCOUNT_SID", "#Your Twilio SID", "User")
+[Environment]::SetEnvironmentVariable("TWILIO_AUTH_TOKEN", " Your Twilio Token", "User")
 [Environment]::SetEnvironmentVariable("USERNAME", "127983", "User")
 
 ###########################################################
@@ -16,12 +16,14 @@
 ###########################################################
 
 $DAYOFWEEK = (Get-Date).DayOfWeek.value__;
-$KNum = "+18185196042"
-$RNum = "+18056039403"
-$CNum = "+18053900337"
-$DNum = "+17192003890"
-$HNum = "+17204419601"
-$MyTwilNum = "+14243690755"
+#Fill the numbers you would like to message in the "+1----------"
+#$KNum = ""
+#$RNum = ""
+#$CNum = ""
+#$DNum = ""
+#$HNum = ""
+#Put your twilio number in here
+$MyTwilNum = ""
 $messageUser = ""
 $InNum = ""
 $bodyMessage = ""
@@ -40,6 +42,7 @@ $bodyMessage = [Microsoft.VisualBasic.Interaction]::InputBox("What do you want t
 # MAIN FUNCTION
 ###########################################################
 
+#Switch statement to set the InNum variable to the phone number you selected
 switch ($messageUser)
 {
     K
