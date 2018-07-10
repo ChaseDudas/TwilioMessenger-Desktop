@@ -1,7 +1,7 @@
 ﻿###########################################################
 # AUTHOR  : Chase Dudas
 # CREATED : 7/5/2018
-# Title   : Twilio Messanger - Desktop 
+# Title   : Twilio Messenger - Desktop 
 # COMMENT : Sends SMS messages via Twilio  
 ###########################################################
 # ENVIRONMENTAL
