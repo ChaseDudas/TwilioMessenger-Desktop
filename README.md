@@ -31,4 +31,4 @@ Version 1.0
 
 ## License
 
-N/A
+MIT
